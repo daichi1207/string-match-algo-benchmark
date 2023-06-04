@@ -1,0 +1,22 @@
+[package]
+name = "bm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+brute_force = {path = "../brute_force"}
+boyer_moore = {path = "../boyer_moore"}
+kmp = {path = "../kmp"}
+rabin_karp = {path = "../rabin_karp"}
+lorem_ipsum = {path = "../lorem_ipsum"}
+
+[dev-dependencies]
+criterion = "0.3.0"
+
+[[bench]]
+name = "lorem_ipsum"
+harness = false
+
+# [[bench]]
+# name = "pi_bench"
+# hartness = false
